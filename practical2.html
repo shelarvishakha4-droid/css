@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Script - Welcome</title>
+    <title>Python Script Welcome</title>
 
-    <!-- PyScript CSS -->
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css">
-
-    <!-- PyScript JS (IMPORTANT) -->
     <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
 </head>
 <body>
 
     <h2>Python Output using PyScript</h2>
+    <div id="output"></div>
 
-    <py-script>
-        print("Welcome")
-    </py-script>
+    <script type="py">
+from pyscript import display
+display("Welcome", target="output")
+    </script>
 
 </body>
 </html>
