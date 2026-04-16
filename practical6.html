@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Data Binding Example</title>
+
+    <!-- AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+
+    <h2>Data Model View Example</h2>
+
+    <!-- View displaying data -->
+    <p><b>Message:</b> {{ message }}</p>
+    <p><b>Name:</b> {{ name }}</p>
+    <p><b>Subject:</b> {{ subject }}</p>
+
+    <script>
+        // Creating module
+        var app = angular.module("myApp", []);
+
+        // Creating controller
+        app.controller("myCtrl", function($scope) {
+            // Data Model
+            $scope.message = "Welcome to AngularJS";
+            $scope.name = "Student";
+            $scope.subject = "Client Side Scripting";
+        });
+    </script>
+
+</body>
+</html>
