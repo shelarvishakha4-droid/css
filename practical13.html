@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>External Controller Example</title>
+
+    <!-- AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!-- External JS File -->
+    <script src="App.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+
+    <h2>AngularJS Controller in External File</h2>
+
+    <p>Name: {{ name }}</p>
+    <p>Message: {{ message }}</p>
+
+    <button ng-click="changeMessage()">Click Me</button>
+
+</body>
+</html>

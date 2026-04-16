@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React Form Validation Stored</title>
+</head>
+<body>
+
+<h2>React Form Validation Program</h2>
+
+<!--
+import React, { useState } from "react";
+
+function App() {
+
+  // State for Name
+  const [name, setName] = useState("");
+
+  // State for Age
+  const [age, setAge] = useState("");
+
+  // State for Course
+  const [course, setCourse] = useState("");
+
+  // State for Error Message
+  const [error, setError] = useState("");
+
+  // Form Submit Function
+  const handleSubmit = (e) => {
+    e.preventDefault(); // page reload stop
+
+    // Name validation
+    if (!name) {
+      setError("Name cannot be empty");
+      return;
+    }
+
+    // Age validation
+    if (age < 18 || age > 30) {
+      setError("Age must be between 18 and 30");
+      return;
+    }
+
+    // Course validation
+    if (!course) {
+      setError("Please select course");
+      return;
+    }
+
+    // If all correct
+    setError("");
+    alert("Enrollment Successful");
+  };
+
+  return (
+    <div style={{ padding: "30px" }}>
+
+      <h2>Student Enrollment Form</h2>
+
+      <form onSubmit={handleSubmit}>
+
+        // Name Input
+        <input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+
+        <br /><br />
+
+        // Age Input
+        <input
+          type="number"
+          placeholder="Age"
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+        />
+
+        <br /><br />
+
+        // Course Dropdown
+        <select
+          value={course}
+          onChange={(e) => setCourse(e.target.value)}
+        >
+          <option value="">Select Course</option>
+          <option>React</option>
+          <option>Angular</option>
+          <option>JavaScript</option>
+        </select>
+
+        <br /><br />
+
+        // Submit Button
+        <button type="submit">Submit</button>
+
+      </form>
+
+      // Error Message Display
+      {error && <p style={{color:"red"}}>{error}</p>}
+
+    </div>
+  );
+}
+
+export default App;
+-->
+
+</body>
+</html>
